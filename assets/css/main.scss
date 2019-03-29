@@ -1,4 +1,4 @@
-.c-wrap{
-  width: 1200px;
-  margin: 0 auto;
-}
+@import "base/var";
+@import "base/mixin";
+@import "reset";
+@import "common";

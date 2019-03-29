@@ -3,14 +3,18 @@
   <!--<nuxt />-->
   <!--</div>-->
   <el-container>
-    <el-header>header1</el-header>
+    <el-header>
+      <div class="c-wrap">header</div>
+    </el-header>
     <el-container class="c-wrap">
       <el-aside>aside</el-aside>
       <el-main>
         <nuxt/>
       </el-main>
     </el-container>
-    <el-footer>footer</el-footer>
+    <el-footer>
+      <div class="c-wrap">footer</div>
+    </el-footer>
   </el-container>
 </template>
 
