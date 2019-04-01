@@ -7,27 +7,29 @@
       <Header/>
     </el-header>
     <el-container class="c-wrap">
-      <el-aside>aside</el-aside>
       <el-main>
         <nuxt/>
       </el-main>
+      <el-aside>aside</el-aside>
     </el-container>
     <el-footer>
-      <div class="c-wrap">footer</div>
+      <Footer/>
     </el-footer>
   </el-container>
 </template>
 
 <script>
 import Header from '../components/header'
+import Footer from '../components/footer'
 export default {
   components:{
-    Header
+    Header,
+    Footer
   }
 }
 </script>
 
-<style class="lang">
+<style scoped>
 .header{
   background-color: #fff;
   border: solid 1px #e6e6e6;

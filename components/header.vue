@@ -1,8 +1,8 @@
 <template>
   <div class="c-wrap">
     <a class="logo">CAMP</a>
-    <el-menu class="menu" mode="horizontal" :default-active="activeIndex" @select="handleSelect">
-      <el-menu-item index="1" class="menu-item" :route="'/home'">首页</el-menu-item>
+    <el-menu class="menu" mode="horizontal" router :default-active="activeIndex" @select="handleSelect" >
+      <el-menu-item index="/home" class="menu-item">首页</el-menu-item>
       <el-menu-item index="2" class="menu-item">前沿</el-menu-item>
       <el-menu-item index="3" class="menu-item">Github+</el-menu-item>
     </el-menu>
@@ -12,13 +12,11 @@
 export default {
   data() {
     return {
-      activeIndex: '0'
+      activeIndex: '/home'
     };
   },
   methods: {
-    handleSelect(index, indexPath) {
-      console.log(index);
-      console.log(indexPath);
+    handleSelect(index) {
     }
   }
 };
@@ -39,6 +37,7 @@ export default {
   &-item {
     font-size: 16px;
     padding: 0 24px;
+    border-bottom: 0!important;
   }
 }
 </style>
