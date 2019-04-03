@@ -1,11 +1,10 @@
 <template>
-  <div class="text-center c-gray">
-    &copy;2019 camp.templatesy.com
-  </div>
+<div></div>
 </template>
 
 <script>
   export default {
+    name: "index"
   }
 </script>
 

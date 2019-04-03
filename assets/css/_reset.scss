@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #f6f6f6;
   margin: 0;
 }
@@ -12,4 +12,17 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+body, html {
+  height: 100%;
+}
+
+.el-main {
+  padding: 0;
+}
+
+.el-menu-item.menu-item.is-active {
+  font-weight: bold;
+  color: #666;
 }

@@ -2,7 +2,15 @@ const Koa = require('koa')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 
+//api
+const router = require('koa-router')()
+const api = require('./routes/api')
+
 const app = new Koa()
+// 加入路由
+app.use(router.routes())
+// 路由处理，在api中
+app.use(api.routes(), api.allowedMethods())
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')

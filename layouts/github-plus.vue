@@ -10,7 +10,7 @@
       <el-main class="main">
         <nuxt/>
       </el-main>
-      <el-aside class="aside">aside</el-aside>
+      <el-aside class="aside">aside-github</el-aside>
     </el-container>
     <el-footer>
       <Footer/>

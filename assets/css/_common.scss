@@ -1,14 +1,36 @@
-.text-center{
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clear{
+  clear: both;
+}
+
+.text-center {
   text-align: center;
 }
-.c-wrap{
-  width: 1200px;
+
+.c-wrap {
+  width: 1000px;
   margin: 0 auto;
 }
-.c-gray{
+
+.c-gray {
   color: #909399;
 }
-.c-card{
+
+.c-card {
   background-color: #fff;
-  border: 1px solid #ebeef5;
+  padding: 10px 20px;
+  border-radius: 1px;
 }
+

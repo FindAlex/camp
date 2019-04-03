@@ -1,0 +1,43 @@
+<template>
+  <el-tabs class="c-card" v-model="activeName" @tab-click="handleClick">
+    <el-tab-pane v-for="item in tabs" :label="activeName===item.name?item.labelFull:item.label"  :name="item.name">
+    </el-tab-pane>
+  </el-tabs>
+</template>
+
+<script>
+
+  export default {
+    layout:'github-plus',
+    components: {},
+    data() {
+      return {
+        tabs:[
+          {
+            name:'new',
+            label:'推荐',
+            labelFull:'首页推荐'
+          },
+          {
+            name:'focus',
+            label:'关注',
+            labelFull:'关注动态'
+          },
+          {
+            name:'hot',
+            label:'热门',
+            labelFull:'热门项目'
+          }
+        ],
+        activeName: 'new'
+      }
+    },
+    methods: {
+      handleClick() {
+      }
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
+</style>

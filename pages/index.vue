@@ -1,10 +1,11 @@
 <template>
-  <div class="c-card">
-    <el-tabs class="tab" v-model="activeName" @tab-click="handleClick">
-      <el-tab-pane v-for="item in tabs"  :name="item.name">
-        {{activeName===item.name?item.labelFull:item.label}}
-      </el-tab-pane>
-    </el-tabs>
+  <div>
+    <el-carousel indicator-position="outside" :interval="5000" class="banner" trigger="click">
+      <el-carousel-item class="banner-item" v-for="(item,index) in bannerItems" :key="index">
+        <a href=""> <img :src="item.img"/></a>
+      </el-carousel-item>
+    </el-carousel>
+
   </div>
 </template>
 
@@ -12,38 +13,25 @@
 
   export default {
     components: {},
-
     data() {
       return {
-        tabs:[
-          {
-            name:'new',
-            label:'最新',
-            labelFull:'最新内容'
-          },
-          {
-            name:'focus',
-            label:'关注',
-            labelFull:'关注动态'
-          },
-          {
-            name:'hot',
-            label:'热门',
-            labelFull:'热门榜单'
-          }
-        ],
-        activeName: 'new'
+        bannerItems: [
+          {img: '/temp/banner-1.jpg'},
+          {img: '/temp/banner-2.jpg'}
+        ]
       }
     },
-    methods: {
-      handleClick() {
-      }
-    }
+    methods: {}
   }
 </script>
 
 <style lang="scss" scoped>
-  .tab {
-    padding: 8px 16px
+  .banner-item {
+    background-color: #eee;
+  }
+</style>
+<style>
+  .banner .el-carousel__button {
+    background-color: #999;
   }
 </style>
