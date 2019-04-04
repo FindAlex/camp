@@ -24,7 +24,7 @@
     },
     created() {
       if (this.$route.matched[0]) {
-        this.activeIndex = this.$route.matched[0].path
+        this.activeIndex = this.$route.matched[0].path || '/'
       }
     }
   }
