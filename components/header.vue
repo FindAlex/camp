@@ -4,7 +4,6 @@
     <el-menu class="menu" mode="horizontal" router :default-active="activeIndex" @select="handleSelect">
       <el-menu-item index="/" class="menu-item">首页</el-menu-item>
       <el-menu-item index="/github-plus" class="menu-item">Github+</el-menu-item>
-      <el-menu-item index="/news" class="menu-item">新闻</el-menu-item>
       <el-menu-item index="/explore" class="menu-item">发现</el-menu-item>
     </el-menu>
     <el-input class="search-input" prefix-icon="el-icon-search" v-model="searchKey" placeholder="搜索文章、组件等"/>

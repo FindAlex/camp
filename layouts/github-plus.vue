@@ -1,7 +1,4 @@
 <template>
-  <!--<div>-->
-  <!--<nuxt />-->
-  <!--</div>-->
   <el-container class="container">
     <el-header class="header" height="61px">
       <Header/>
@@ -10,7 +7,7 @@
       <el-main class="main">
         <nuxt/>
       </el-main>
-      <el-aside class="aside">aside-github</el-aside>
+      <el-aside class="aside">topic</el-aside>
     </el-container>
     <el-footer>
       <Footer/>

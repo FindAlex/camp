@@ -26,7 +26,7 @@
           {
             name:'hot',
             label:'热门',
-            labelFull:'热门项目'
+            labelFull:'近期热门'
           }
         ],
         activeName: 'new'
