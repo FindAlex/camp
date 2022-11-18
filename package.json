@@ -18,7 +18,7 @@
     "koa-router": "^7.4.0",
     "mysql": "^2.16.0",
     "node-sass": "^4.11.0",
-    "nuxt": "^2.4.0",
+    "nuxt": "^2.15.8",
     "sass-loader": "^7.1.0",
     "vue-lazyload": "^1.2.6"
   },
